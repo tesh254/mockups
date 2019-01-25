@@ -26,7 +26,11 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
     padding: 5% 15%;
+=======
+    padding: 15%;
+>>>>>>> this is main
 }
 
 .container-holder {
@@ -48,6 +52,7 @@ body {
 
 .story {
     font-size: 12pt;
+<<<<<<< HEAD
 }
 
 #tags{
@@ -110,3 +115,6 @@ body {
     text-align: justify;
 }
 
+=======
+}
+>>>>>>> this is main
