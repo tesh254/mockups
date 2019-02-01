@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    padding: 15%;
+    padding: 5% 15%;
 }
 
 .container-holder {
@@ -49,3 +49,39 @@ body {
 .story {
     font-size: 12pt;
 }
+
+#tags{
+    float:left;
+    border:1px solid #ccc;
+    padding:4px;
+    font-family:Arial;
+  }
+  #tags span.tag{
+    cursor:pointer;
+    display:block;
+    float:left;
+    color: white;
+    background: black;
+    padding:5px 10px;
+    padding-right:30px;
+    margin:4px;
+  }
+  #tags span.tag:hover{
+    opacity:0.7;
+  }
+  #tags span.tag:after{
+   position:absolute;
+   content:"×";
+   /* border:1px solid; */
+   border-radius:10px;
+   padding:0 4px;
+   margin:3px 0 10px 7px;
+   font-size:10px;
+  }
+  #tags input{
+    background:#eee;
+    border:0;
+    margin:4px;
+    padding:7px;
+    width:auto;
+  }
