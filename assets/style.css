@@ -85,3 +85,12 @@ body {
     padding:7px;
     width:auto;
   }
+#pagination {
+    width: auto;
+    margin-left: 35%;
+}
+
+#drop-wrapper {
+    margin-right: 900%;
+}
+
