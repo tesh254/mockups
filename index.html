@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Authors Haven</title>
 </head>
+
 <body>
     <div class="template">
         <div class="ui inverted huge borderless fixed fluid menu">
@@ -21,7 +23,20 @@
                 </div>
                 <a class="item" id="login">Login</a><a class="item" id="signup">Signup</a>
             </div>
-        </div><br><br><br><br><br>
+        </div>
+
+
+        <br><br><br><br><br>
+        <div class="ui right floated compact basic segment stepper">
+            <div class="ui right floated compact" id='drop-wrapper'>
+                <select class="ui dropdown">
+                    <option value="">Articles per page</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+        </div><br><br><br>
         <div class="wrapper">
             <div class="ui two cards">
                 <div class="ui raised card">
@@ -31,15 +46,15 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                            <h1></h1>
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
@@ -50,15 +65,15 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                        <img class="ui avatar image" src="/images/avatar/small/matt.jpg"> Matt
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
@@ -69,15 +84,15 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                        <img class="ui avatar image" src="/images/avatar/small/matt.jpg"> Matt
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
@@ -88,15 +103,15 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                        <img class="ui avatar image" src="/images/avatar/small/matt.jpg"> Matt
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
@@ -107,15 +122,15 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                        <img class="ui avatar image" src="/images/avatar/small/matt.jpg"> Matt
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
@@ -126,22 +141,35 @@
                     <div class="content">
                         <div class="header">Cute Dog</div>
                         <div class="meta">
-                        <span class="category">Animals</span>
+                            <span class="category">Animals</span>
                         </div>
                         <div class="description">
-                        <p></p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="extra content">
                         <div class="right floated author">
-                        <img class="ui avatar image" src="/images/avatar/small/matt.jpg"> Matt
-                        <div class="ui heart rating"   data-tooltip="Favorite" data-rating="0" data-max-rating="1"></div>
+                            <i class="bookmark outline icon"></i>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+
+            <div aria-label="Pagination Navigation" role="navigation" class="ui pagination menu" id="pagination">
+                <a aria-current="true" aria-disabled="false" tabindex="0" value="1" type="pageItem" class="item">1</a>
+                <a aria-current="true" aria-disabled="false" tabindex="0" value="2" type="pageItem" class="active item">2</a>
+                <a aria-current="false" aria-disabled="false" tabindex="0" value="3" type="pageItem" class="item">3</a>
+                <a aria-current="false" aria-disabled="true" tabindex="-1" value="7" type="ellipsisItem" class="item">...</a>
+                <a aria-current="false" aria-disabled="false" tabindex="0" value="10" type="pageItem" class="item">10</a>
+            </div>
+
         </div>
+
     </div>
+
+
     <div class="ui mini modal signup">
         <i class="close icon"></i>
         <div class="header">
@@ -187,75 +215,76 @@
             <br>
             <div class="actions">
                 <button class="ui facebook button" id="button">
-                <i class="facebook icon"></i>
-                Facebook
+                    <i class="facebook icon"></i>
+                    Facebook
                 </button><br><br>
                 <button class="ui twitter button" id="button">
-                <i class="twitter icon"></i>
-                Twitter
+                    <i class="twitter icon"></i>
+                    Twitter
                 </button><br><br>
                 <button class="ui red google button" id="button">
-                <i class="google icon"></i>
-                Google
+                    <i class="google icon"></i>
+                    Google
                 </button><br><br>
             </div>
         </div>
     </div>
     <div class="ui mini modal login">
-            <i class="close icon"></i>
-            <div class="header">
-                Login
+        <i class="close icon"></i>
+        <div class="header">
+            Login
+        </div>
+        <div class="ui centered content" id="forms">
+            <div class="ui huge corner labeled input">
+                <input type="text" placeholder="Email">
+                <div class="ui corner label">
+                    <i class="asterisk icon"></i>
+                </div>
+            </div><br><br>
+            <div class="ui huge corner labeled input">
+                <input type="password" placeholder="Password">
+                <div class="ui corner label">
+                    <i class="asterisk icon"></i>
+                </div>
             </div>
-            <div class="ui centered content" id="forms">
-                <div class="ui huge corner labeled input">
-                    <input type="text" placeholder="Email">
-                    <div class="ui corner label">
-                        <i class="asterisk icon"></i>
-                    </div>
-                </div><br><br>
-                <div class="ui huge corner labeled input">
-                    <input type="password" placeholder="Password">
-                    <div class="ui corner label">
-                        <i class="asterisk icon"></i>
-                    </div>
-                </div>
-                <br><br>
-                <div class="ui checkbox">
-                    <input type="checkbox" name="example">
-                    <label>Remember me</label>
-                </div><br><br>
-                <div class="ui right floated">
-                    <a href="#">Forgot password?</a>
-                </div>
-                <br>
-                <button class="ui large black button" id="button">
-                    Login
-                </button>
-                <br>
-                <div class="ui divider">
-                </div>
-                <br>
-                <div class="actions">
-                    <button class="ui facebook button" id="button">
+            <br><br>
+            <div class="ui checkbox">
+                <input type="checkbox" name="example">
+                <label>Remember me</label>
+            </div><br><br>
+            <div class="ui right floated">
+                <a href="#">Forgot password?</a>
+            </div>
+            <br>
+            <button class="ui large black button" id="button">
+                Login
+            </button>
+            <br>
+            <div class="ui divider">
+            </div>
+            <br>
+            <div class="actions">
+                <button class="ui facebook button" id="button">
                     <i class="facebook icon"></i>
                     Facebook
-                    </button><br><br>
-                    <button class="ui twitter button" id="button">
+                </button><br><br>
+                <button class="ui twitter button" id="button">
                     <i class="twitter icon"></i>
                     Twitter
-                    </button><br><br>
-                    <button class="ui red google button" id="button">
+                </button><br><br>
+                <button class="ui red google button" id="button">
                     <i class="google icon"></i>
                     Google
-                    </button><br><br>
-                </div>
+                </button><br><br>
             </div>
         </div>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="./assets/main.js"></script>
 </body>
+
 </html>

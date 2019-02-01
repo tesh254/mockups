@@ -94,3 +94,19 @@ body {
   p{
       font-size: 25px;
   }
+#pagination {
+    width: auto;
+    margin-left: 35%;
+}
+
+#drop-wrapper {
+    margin-right: 900%;
+}
+
+#major {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+    text-align: justify;
+}
+
